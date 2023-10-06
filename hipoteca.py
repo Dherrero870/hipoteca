@@ -1,0 +1,5 @@
+hipoteca = float (input("Introduzca la cantidad a pagar de su hipoteca en euros:"))
+interés_mensual = float (input("Introduzca su porcentaje de interés mensual (anual/12):"))
+tiempo = float (input("Introduzca el número de meses:"))
+pago_mensual = hipoteca * (interés_mensual * (1 + interés_mensual) ** tiempo)/((1 + interés_mensual) ** tiempo-1)
+print ("El pago mensual es de",pago_mensual,"euros")
